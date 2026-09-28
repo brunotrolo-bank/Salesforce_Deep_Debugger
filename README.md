@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/brunotrolo/Salesforce_Deep_Debugger?style=flat-square&color=00A1E0&label=stars" alt="Stars">
+  <img src="https://img.shields.io/github/stars/brunotrolo-bank/Salesforce_Deep_Debugger?style=flat-square&color=00A1E0&label=stars" alt="Stars">
   <img src="https://img.shields.io/badge/n%C3%ADveis-2-04E1C2?style=flat-square" alt="2 níveis">
   <img src="https://img.shields.io/badge/testes-41%20%2B%207%20evals-032D60?style=flat-square" alt="41 testes + 7 evaluations">
   <img src="https://img.shields.io/badge/works%20with-Claude%20Code-032D60?style=flat-square" alt="Works with Claude Code">
@@ -31,7 +31,7 @@ para exatamente no deploy: cobertura de teste e o portão de qualidade garantem 
 código está correto **antes** de ir para a org. Ninguém observa o que acontece **depois**
 — quando o código já está rodando com tráfego real e algo quebra. Esta skill é esse elo.
 
-**Não é uma reengenharia do [`Salesforce Archaeologist`](https://github.com/brunotrolo/Salesforce_Archaeologist).**
+**Não é uma reengenharia do [`Salesforce Archaeologist`](https://github.com/brunotrolo-bank/Salesforce_Archaeologist).**
 O Archaeologist é investigação pesada e deliberada — survey de uma org inteira, sob
 demanda. Esta skill é resposta pontual e rápida a "isso quebrou, por quê" — e, se o
 Archaeologist já rodou no mesmo projeto, **consome** o `CAPABILITIES_MAP.md` dele para
@@ -103,12 +103,12 @@ Rode **de dentro da pasta do projeto** onde você quer investigar incidentes:
 
 **Mac / Linux / Git Bash:**
 ```bash
-git clone --depth 1 https://github.com/brunotrolo/Salesforce_Deep_Debugger.git .ddbg-tmp && mkdir -p .claude && cp -r .ddbg-tmp/.claude/. .claude/ && cp -rn .ddbg-tmp/docs/. docs/ 2>/dev/null; rm -rf .ddbg-tmp
+git clone --depth 1 https://github.com/brunotrolo-bank/Salesforce_Deep_Debugger.git .ddbg-tmp && mkdir -p .claude && cp -r .ddbg-tmp/.claude/. .claude/ && cp -rn .ddbg-tmp/docs/. docs/ 2>/dev/null; rm -rf .ddbg-tmp
 ```
 
 **Windows (PowerShell):**
 ```powershell
-git clone --depth 1 https://github.com/brunotrolo/Salesforce_Deep_Debugger.git .ddbg-tmp; New-Item -ItemType Directory -Force .claude | Out-Null; Copy-Item -Recurse -Force .ddbg-tmp\.claude\* .claude\; if (-not (Test-Path docs\incidents)) { New-Item -ItemType Directory -Force docs\incidents | Out-Null; Copy-Item .ddbg-tmp\docs\incidents\README.md docs\incidents\ }; Remove-Item -Recurse -Force .ddbg-tmp
+git clone --depth 1 https://github.com/brunotrolo-bank/Salesforce_Deep_Debugger.git .ddbg-tmp; New-Item -ItemType Directory -Force .claude | Out-Null; Copy-Item -Recurse -Force .ddbg-tmp\.claude\* .claude\; if (-not (Test-Path docs\incidents)) { New-Item -ItemType Directory -Force docs\incidents | Out-Null; Copy-Item .ddbg-tmp\docs\incidents\README.md docs\incidents\ }; Remove-Item -Recurse -Force .ddbg-tmp
 ```
 
 Se o projeto já tem um `.claude/settings.json` (de outra skill deste arsenal), **mescle
@@ -195,7 +195,7 @@ oficial de autoria de skills da Anthropic antes da última rodada:
 ---
 
 <p align="center">
-  ⭐ <b><a href="https://github.com/brunotrolo/Salesforce_Deep_Debugger/stargazers">Dê uma star no repo</a></b> para ser avisado quando novas skills e melhorias saírem.
+  ⭐ <b><a href="https://github.com/brunotrolo-bank/Salesforce_Deep_Debugger/stargazers">Dê uma star no repo</a></b> para ser avisado quando novas skills e melhorias saírem.
 </p>
 
 ---
@@ -212,12 +212,12 @@ oficial de autoria de skills da Anthropic antes da última rodada:
 
 ## Relacionado
 
-- **[Salesforce Archaeologist](https://github.com/brunotrolo/Salesforce_Archaeologist)** — Engenharia reversa completa de uma org/jornada; o Deep Debugger consome o `CAPABILITIES_MAP.md` dele quando presente, sem remapear nada
-- **[Salesforce Apex-Cover-Loop](https://github.com/brunotrolo/Salesforce_Apex-Cover-Loop)** — Cobertura de teste autônoma, antes do deploy; homologação com teste depois de um fix do Deep Debugger é trabalho desta skill
-- **[Salesforce Journey Developer](https://github.com/brunotrolo/Salesforce_Journey_Developer)** — Constrói a capacidade original; o Deep Debugger entra depois, quando algo já quebrou em produção
+- **[Salesforce Archaeologist](https://github.com/brunotrolo-bank/Salesforce_Archaeologist)** — Engenharia reversa completa de uma org/jornada; o Deep Debugger consome o `CAPABILITIES_MAP.md` dele quando presente, sem remapear nada
+- **[Salesforce Apex-Cover-Loop](https://github.com/brunotrolo-bank/Salesforce_Apex-Cover-Loop)** — Cobertura de teste autônoma, antes do deploy; homologação com teste depois de um fix do Deep Debugger é trabalho desta skill
+- **[Salesforce Journey Developer](https://github.com/brunotrolo-bank/Salesforce_Journey_Developer)** — Constrói a capacidade original; o Deep Debugger entra depois, quando algo já quebrou em produção
 
 ---
 
 <p align="center">
-  <sub>© <a href="https://github.com/brunotrolo">brunotrolo</a> · <a href="./LICENSE">MIT</a></sub>
+  <sub>© <a href="https://github.com/brunotrolo-bank">brunotrolo-bank</a> · <a href="./LICENSE">MIT</a></sub>
 </p>
